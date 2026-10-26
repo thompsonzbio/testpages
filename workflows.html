@@ -1,5 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PGCoE Network - Bioinformatics Workflows</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    #content {
+      margin: 0;
+      padding: 0;
+    }
+
+    .activePage {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #033C3F; 
+    }
+  </style>
+</head>
+  
 <body>
-    <div class="top-container">
+  <nav>
+    <a href="./">Home</a>
+    <a href="./protocols.html">Sequencing Protocols</a>
+    <a href="./workflows.html"><span class="activePage">Bioinformatics Workflows</span></a>
+    <a href="./response.html">Response and Readiness</a>
+    <a href="./dataviz.html">Data and Visualization</a>
+    <a href="./education.html">Education</a>
+  </nav>
+
+  <div class="top-container">
       <div class="content">
         <h2>Genomic Assembly and Analysis Workflows</h2>
         <p>The Pathogen Genomics Centers of Excellence (PGCoE) Network is currently conducting a viral respiratory benchmarking study, which aims to compare the results of pathogen genome assembly workflows used across the United States. When complete, the bioinformatics workflows listed below will be annotated according to their applicability for different sequencing platforms and effectiveness for specific pathogens.<p>
@@ -13,38 +45,83 @@
     <div class="bottom-container">
       <h2>Pathogen Genome Assembly Workflows</h2>
       <div class="outer">
+        <h3>TheiaCoV Workflow Series</h3>	
+	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiacov/">workflow series</a> for genomic characterization of SARS-CoV-2. There are currently five TheiaCoV workflows designed to accommodate different kinds of input data, including sequencing data generated on the Illumina, ONT, and ClearLabs platforms.</a></p>
+        
+        <h3>TheiaMeta</h3>	
+	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiameta/">workflow series</a> for genomic analysis from metagenomic sequencing, using both reference-based and reference-free approaches.</a></p>
+        
+        <h3>TheiaProk Workflow Series</h3>	
+	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiaprok/">workflow series</a> for genomic characterization of bacterial genomes. There are currently four TheiaProk workflows designed to accommodate different kinds of input data, including sequencing data generated on the Illumina and ONT platforms.</a></p>
+        
         <h3>VAPER</h3>
         <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> <a href="https://nwpage.org/node/17">Pipeline</a> for assembling viral whole genome sequences from probe enrichment (a.k.a hybrid capture/enrichment), shotgun metagenomic, and tiled-amplicon sequence data.</p>       
         
         <h3>viral-pipelines</h3>
         <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A set of <a href="https://github.com/broadinstitute/viral-pipelines">scripts and tools</a> for the assembly and analysis of viral next generation sequencing data. All workflows are also available on the <a href="https://app.terra.bio/#workspaces/pathogen-genomic-surveillance/COVID-19">Terra platform.</a></p>
-        
-        <h3>TheiaCoV Workflow Series</h3>	
-	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiacov/">workflow series</a> for genomic characterization of SARS-CoV-2. There are currently five TheiaCoV workflows designed to accommodate different kinds of input data, including sequencing data generated on the Illumina, ONT, and ClearLabs platforms.</a></p>
-        
-        <h3>TheiaProk Workflow Series</h3>	
-	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiaprok/">workflow series</a> for genomic characterization of bacterial genomes. There are currently four TheiaProk workflows designed to accommodate different kinds of input data, including sequencing data generated on the Illumina and ONT platforms.</a></p>
-        
-        <h3>TheiaMeta</h3>	
-	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows/genomic_characterization/theiameta/">workflow series</a> for genomic analysis from metagenomic sequencing, using both reference-based and reference-free approaches.</a></p>
-        
+      
         <h3>virus-shotgun</h3>	
 	      <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://github.com/neidl-connor-lab/virus-shotgun">simple pipeline</a> for metagenomic classification (using Kraken2), assembly, and variant calling from viral sequencing data.</a></p>
-        
-        <h3>Delphy</h3>
-        <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://delphy.fathom.info/">fast, scalable, accurate, and accessible tool</a> for Bayesian phylogenetics with a drag-and-drop interface that requires no local installation or coding.</a></p>
-        
-        <h3>reconstructR</h3>
-        <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>An <a href="https://github.com/broadinstitute/reconstructR">R package</a> that allows for prediction of transmission events in infectious disease outbreaks and can account for within-host variability.</a></p>
-        
-        <h3>JUNIPER</h3>
-        <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://github.com/broadinstitute/juniper-analyses">framework</a> for predicting both phylogenies and transmission networks for viral outbreaks, accounting for both within-host variability and incomplete data.</a></p>
-	    </div>
+      </div>
 
       <h2>Genomic Analysis Workflows</h2>
       <div class="outer">
-        <h3>BigBacter</h3>
-        <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> <a href="https://nwpage.org/tool-workflow/bigbacter">BigBacter</a> is a bacterial genomic surveillance pipeline to build phylogenetic trees, SNP matrices, and summary statistics, with output generated as MicroReact files. This pipeline also enables users to keep a running archive of genomic clusters that new sequences are added to if they're genomically similar, enabling longitudinal cluster monitoring.</p>
+            <h3>BigBacter</h3>
+            <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> <a href="https://nwpage.org/tool-workflow/bigbacter">BigBacter</a> is a bacterial genomic surveillance pipeline to build phylogenetic trees, SNP matrices, and summary statistics, with output generated as MicroReact files. This pipeline also enables users to keep a running archive of genomic clusters that new sequences are added to if they're genomically similar, enabling longitudinal cluster monitoring.</p>
+
+            <h3>camlhmp</h3>
+            <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a>An <a href="https://github.com/rpetit3/camlhmp">infrastructure</a> for defining typing schemas for organisms. Current tools developed using this infrastructure include <a href="https://github.com/rpetit3/pasty?tab=readme-ov-file">pasty</a> (<em>Pseudomonas aeruginosa</em> serotyper), <a href="https://github.com/rpetit3/pbptyper">pbptyper</a> (<em>Streptococcus pneumoniae</em> penicillin binding protein typing), <a href="https://github.com/rpetit3/sccmec">sccmec</a> (Staphylcoccal chromosome cassette mec typing), and <a href="https://github.com/erinyoung/tulatyper">tulatyper</a> (<em>Francisella tularensis</em> subtyping), all of which are integrated with Bactopia.</a></p>
+          
+            <h3>Bactopia</h3>
+            <p><a href="https://github.com/cape-ph"></a><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a> A <a href="https://github.com/bactopia/bactopia">complete pipeline</a> for the analysis of bacterial genomes, including tools for the detection of antibiotic resistance (AMR) genes and mobile genetic elements (MGEs).</p>
+
+            <h3>Hospital Acquired Infection (HAI) Analysis</h3>
+            <p><a href="https://github.com/cape-ph"></a><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a> An <a href="https://github.com/cape-ph/arlog/tree/validation">R script workflow</a> for automating data structuring, linkage, and analysis for a subset of pathogens tracked through the CDC's Antimicrobial Resistance Laboratory Network (ARLN) and Active Bacterial Core (ABC).</p>
+
+            <h3>Tip Trait Association Testing (TTAT)</h3>
+            <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"></a>A <a href="https://github.com/leke-lyu/TTAT"> statistical framework</a> for testing if more closely related taxa on a phylogenetic tree are more likely to share the same trait values than we'd expect just by chance, allowing one to test for association between tree tips and chosen characteristics. There are also <a href="https://github.com/leke-lyu/jointEstimation">features</a> to analyze subregion heterogeneity of viral transmission and track when, where, and how many case introductions occur.</a></p>
+
+            <h3>Phylogenetic Analysis Sampling Tool (PAST)</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> A <a href="https://github.com/glstott/past">tool</a> which allows users to create a blanaced and well-spread sample across an arbitrary number of relevant variables from a large population of sequences for subsequent phylogenetic analysis.</p>
+
+            <h3>Phylogeny and Metadata Network Database (PMeND)</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> A <a href="https://github.com/glstott/PMeND">workflow</a> for integrating any dataset (e.g., genetic, ecological, contact tracing network) with sequence data for phylogenetic tree generation.</p>
+
+            <h3>Delphy</h3>
+            <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://delphy.fathom.info/">fast, scalable, accurate, and accessible tool</a> for Bayesian phylogenetics with a drag-and-drop interface that requires no local installation or coding.</a></p>
+
+            <h3>JUNIPER</h3>
+            <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>A <a href="https://github.com/broadinstitute/juniper-analyses">framework</a> for predicting both phylogenies and transmission networks for viral outbreaks, accounting for both within-host variability and incomplete data.</a></p>
+        
+            <h3>reconstructR</h3>
+            <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>An <a href="https://github.com/broadinstitute/reconstructR">R package</a> that allows for prediction of transmission events in infectious disease outbreaks and can account for within-host variability.</a></p>
+          
+            <h3>Joint Estimation: SARS-CoV-2 Regional Heterogenous Transmission Analysis</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> <a href="https://github.com/leke-lyu/jointEstimation">Analytical workflows</a> to trace imported SARS-CoV-2 clusters using large-scale genome datasets to pinpoint when, where, and how many SARS-CoV-2 introdictions occur while also tracking the circulation of resulting clusters.</p>
+          
+            <h3>Spatial Transmission Count Statistic</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> <a href="https://zenodo.org/records/15110638">Code</a> that provides an efficient means to summarize the geographic transmission patterns imprinted in viral phylogenies, categorizing case linkages as imports, local transmissions, and exports.</p>
+ 
+            <h3>Subsamplerr</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> An <a href="https://zenodo.org/records/15110640">R package</a> that processes case count tables and genome metadata to enable a visual exploration of sampling heterogeneity and the implementation of proportional sampling schemes.</p>
+
+            <h3>SARS-CoV-2 Genomic Wastewater Surveillance</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> A <a href="https://github.com/Gabriella-Veytsel/wastewater">Bayesian phylodynamic approach</a> to characterize SARS-CoV-2 variant dynamics using wastewater sequences.</p>
+
+            <h3>Metagenomic Analysis Pipeline</h3>
+            <p><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-GA.png"> A <a href="https://github.com/briannajeanne/metagen/tree/main">pathogen agnostic pipeline</a> to perform a series of metagenomic bioinformatics analyses, including read filtering, taxonomic classification, and BLAST searches.</p>
+      
+            <h3>SNPer</h3>
+            <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> A <a href="https://github.com/mccronelab/SNPer">Nextflow-based pipeline</a> for calling within-host variants from standard sequencing read data.</p>
+
+            <h3>racoon</h3>
+            <p><a href="https://nwpage.org/"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NW.png"></a> A <a href="https://github.com/NW-PaGe/wadoh_raccoon">Python package</a> for transforming and linking pathogen sequencing and subtyping data.</p>
       </div>
     </div>
+
+  <footer>
+    <p>&copy; 2026 Pathogen Genomics Centers of Excellence</p>
+  </footer>
+    
 </body>
+</html>

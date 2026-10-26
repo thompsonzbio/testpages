@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Splash template</title>
+  <title>PGCoE Network</title>
 
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -12,49 +12,93 @@
       margin: 0;
       padding: 0;
     }
+
+    .activePage {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #033C3F; 
+    }
+
+    .rounded-box {
+      border: 2px solid #F0F4F5; /* Defines the border style, width, and color */
+      border-radius: 50px; /* Rounds all four corners*/
+      background-color: #F0F4F5; /* Adds some space inside the box for content */
+      padding: 1px;
+    }
+
+    figure {
+      text-align: center; /* Centers the image and figcaption */
+    }
   </style>
 </head>
   
 <body>
   <nav>
-    <a onclick="loadContent('about.html')">Home</a>
-    <a onclick="loadContent('protocols.html')">Sequencing Protocols</a>
-    <a onclick="loadContent('workflows.html')">Bioinformatics Workflows</a>
-    <a onclick="loadContent('response.html')">Response and Readiness</a>
+    <a href="./"><span class="activePage">Home</span></a>
+    <a href="./protocols.html">Sequencing Protocols</a>
+    <a href="./workflows.html">Bioinformatics Workflows</a>
+    <a href="./response.html">Response and Readiness</a>
+    <a href="./dataviz.html">Data and Visualization</a>
+    <a href="./education.html">Education</a>
   </nav>
 
-  <div id="content"></div>
+  <div class="top-container">
+    <div class="content">
+      <h2>Pathogen Genomics Centers of Excellence Network</h2>
+      <p>The Pathogen Genomics Centers of Excellence (PGCoE) Network is meant to foster innovation and improve technical capacity in pathogen genomics, molecular epidemiology, and bioinformatics to better prevent, control, and respond to microbial threats of public health importance. The network also represents an unprecedented opportunity to expand and deepen collaboration between U.S. public health agencies and academic institutions to form a national resource to better prevent, control, and respond to microbial threats of public health importance.</p>
+    </div>
+    <div>
+      <img src="img/pgcoe-network-graphic-element.png" alt="PGCoE logo">
+    </div>
+    <div class="break-line"></div>
+    <br>
+    <div class="row-container" style="display: flex; align-items: center; gap: 10px; padding: 5px; width: 1200px;">
+      <a href="./measles.html" class="button">Measles resources</a>
+      <p style="color: #D81B1B; margin: 0;">The PGCoE network is actively monitoring the measles situation in the United States. Click the button at left for measles whole genomic sequencing protocols and other resources collated by the PGCoE network.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div id="contentBox" style="margin:auto; width=100%; flex-wrap: wrap;">
+    <h2>PGCoE Sites</h2>
+        <div id="column1" class="rounded-box" style="float:left; margin:2px; width:180px;">
+          <figure>
+            <img src="img/logo_square-GA.png" alt="GA PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.pgcoe-cape.org/">Georgia PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column2" class="rounded-box" style="float:left; margin:2px; width:180px;">
+          <figure>
+            <img src="img/logo_square-MN.png" alt="MN PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.health.state.mn.us/">Minnesota PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column3" class="rounded-box" style="float:left; margin:2px; width:180px;">
+          <figure>
+            <img src="img/logo_square-NE.png" alt="NE PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://www.nepgcoe.org">New England PGCoE</a></figcaption>
+          </figure>
+        </div>
+        <div id="column4" class="rounded-box" style="float:left; margin:2px; width:195px;">
+          <figure>
+            <img src="img/logo_square-NW.png" alt="NW PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://nwpage.org/">Northwest PGCoE </a><a href="https://github.com/nw-page">(Github)</a></figcaption>
+          </figure>
+        </div>
+        <div id="column5" class="rounded-box" style="float:left; margin:2px; width:180px;">
+          <figure>
+            <img src="img/logo_square-VA.png" alt="VA PGCoE logo" style="width: 6rem;">
+            <figcaption><a href="https://va-pgcoe.org/">Virginia PGCoE</a></figcaption>
+          </figure>
+        </div>
+      </div>
+
+  </div>
 
   <footer>
-    <p>&copy; 2025 Pathogen Genomics Centers of Excellence</p>
+    <p>&copy; 2026 Pathogen Genomics Centers of Excellence</p>
   </footer>
-
-  <script>
-    function loadContent(page) {
-      fetch(page)
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('content').innerHTML = html;
-    
-          // Highlight active link
-          const links = document.querySelectorAll('nav a');
-          links.forEach(link => link.classList.remove('active'));
-    
-          // Add "active" class to the clicked link
-          const activeLink = Array.from(links).find(link => link.getAttribute('onclick')?.includes(page));
-          if (activeLink) {
-            activeLink.classList.add('active');
-          }
-        })
-        .catch(err => {
-          document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
-          console.error(err);
-        });
-    }
-
-    // Load default content
-    window.onload = () => loadContent('about.html');
-  </script>
     
 </body>
 </html>

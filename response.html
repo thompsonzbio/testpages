@@ -1,8 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PGCoE Network - Response and Readiness</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    #content {
+      margin: 0;
+      padding: 0;
+    }
+
+    .activePage {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #033C3F; 
+      }
+  </style>
+</head>
+  
 <body>
-    <div class="top-container">
+  <nav>
+    <a href="./">Home</a>
+    <a href="./protocols.html">Sequencing Protocols</a>
+    <a href="./workflows.html">Bioinformatics Workflows</a>
+    <a href="./response.html"><span class="activePage">Response and Readiness</span></a>
+    <a href="./dataviz.html">Data and Visualization</a>
+    <a href="./education.html">Education</a>
+  </nav>
+
+  <div class="top-container">
       <div class="content">
         <h2>Responding to Emerging Pathogen Threats</h2>
-        <p>The PGCoE Network also leads efforts to create the technical and social unification necessary to enable nimble, coordinated work between partners when generating and using sequence data as during an infectious disease event. This work ensures we have consistent ways of generating and capturing genomic and metadata, methods for sharing and/or collating across states, jurisdictions, and institutions, and protocols for how we communicate and work together during an infectious disease response.</p>
+        <p>The Pathogen Genomics Centers of Excellence (PGCoE) Network leads efforts to create the technical and social unification necessary to enable nimble, coordinated work between partners when generating and using sequence data as during an infectious disease event. This work ensures we have consistent ways of generating and capturing genomic and metadata, methods for sharing and/or collating across states, jurisdictions, and institutions, and protocols for how we communicate and work together during an infectious disease response.</p>
       </div>
       <div>
         <img src="img/pgcoe-network-graphic-element.png" alt="PGCoE logo">
@@ -19,12 +51,20 @@
 
         <h2>Data Sharing Resources</h2>
         <div class="outer">
-            <p>The PGCoE Network is tackling big challenges in data sharing in several ways, including the development of data sharing templates and metadata specifications for genomic epidemiology endpoints. These documents and templates will be linked here when available. </p>
+            <p>The PGCoE Network is tackling big challenges in data sharing in several ways, including the development of data sharing templates and metadata specifications for genomic epidemiology endpoints. Available documents and templates are listed below.</p>
+            <p><a href="https://pgcoe.github.io/NCBI-upload-companion/">NCBI Upload Companion</a>: The PGCoE Network developed this resource to assist public health scientists submitting data to National Center for Biotechnology Information (NCBI) databases. Acting as a companion to official NCBI documentation, the guide provides an overview of NCBI's databases and specific recommendations for common issues encountered by public health agencies when uploading genomic data.</p>
         </div>
-            
-        <h2>Genomic Analysis Visualization Library</h2>
+
+        <h2>Sample Size Calculations</h2>
         <div class="outer">
-            <p>In outbreak situations, it is often necessary to move quickly, especially to answer important questions about where an pathogen outbreak may be coming from, how it's spreading, and if the pathogen itself is changing as it spreads. To facilitate rapid deployment and visualization of these analyses, the PGCoE Network is building a Genomic Analysis Visualization Library. This library will include key analyses that should be performed to answer specific questions often asked during pathogen outbreaks, as well as code snippets that can be used to perform these analyses given a standardized set of input data. Together, these code snippets can form the basis of a situational report suitable for deployment in emergency situations of multiple pathogens. The Visualization Library will be linked here when complete.</p>
+          <p><a href="https://nepgcoe.org/resources.html"><img style="display:inline-block; height:1em; width:auto; transform:translate(0, 0.1em)" src="img/icon_square-NE.png"></a>The NE PGCoE developed a <a href="https://nepgcoe.org/right_sizing_work_instruction.pdf">work instruction</a> covering the uses of the phylosamp R package for the purpose of sample sizing for viral variant surveillance. Example code, outputs, and detailed instructions are provided to perform power analyses and sample sizing for surveilling viral variants.</p>
         </div>
+       
     </div>
+    
+  <footer>
+    <p>&copy; 2026 Pathogen Genomics Centers of Excellence</p>
+  </footer>
+    
 </body>
+</html>
